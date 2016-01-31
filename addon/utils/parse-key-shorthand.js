@@ -22,6 +22,10 @@ export default function parseKeyShorthand(key, options) {
         options.requireShift = true;
         break;
 
+      case '':
+        key = '+';
+        break;
+
       default: key = k;
     }
   });
